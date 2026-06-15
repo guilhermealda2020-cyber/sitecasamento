@@ -2,7 +2,7 @@
 // Para trocar fotos, substitua os arquivos dentro da pasta img/casal mantendo os mesmos nomes.
 // Para trocar textos, datas, locais e links, edite somente este arquivo.
 
-const API_URL = "https://script.google.com/macros/s/AKfycbyz9dVTFiWD3YkDlvR_qYOEdKzeWG9rulRf0JQIBAgdhm2T_IUrc7X9wXUhuEG3uB_E/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbzdYi7lf04BVd9avHxB7UVOsnVQAOLgYBTICsDQhuSKZaxiO-zXCpllii1t-Mtem3bxWw/exec";
 
 const SITE_CONFIG = {
   noiva: "Fernanda",
