@@ -1,0 +1,19 @@
+COMO TROCAR AS FOTOS DO CASAL
+
+Substitua as imagens desta pasta mantendo exatamente os nomes abaixo:
+
+1. hero.jpg          -> foto principal da abertura do site
+2. noiva.jpg         -> foto da Fernanda
+3. noivo.jpg         -> foto do Guilherme
+4. galeria-01.jpg    -> foto da galeria
+5. galeria-02.jpg    -> foto da galeria
+6. galeria-03.jpg    -> foto da galeria
+7. galeria-04.jpg    -> foto da galeria
+8. galeria-05.jpg    -> foto da galeria
+9. galeria-06.jpg    -> foto da galeria
+
+Dicas:
+- Use fotos em JPG.
+- Não use acentos nem espaços no nome do arquivo.
+- Depois de trocar as fotos, suba tudo novamente no GitHub e clique em Commit changes.
+- O site já está configurado para carregar essas imagens automaticamente.

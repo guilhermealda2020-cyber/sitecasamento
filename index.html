@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casamento | Fernanda & Guilherme</title>
+  <meta name="description" content="Site de casamento de Fernanda e Guilherme: história do casal, informações do evento, confirmação de presença e lista de presentes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a href="#home" class="brand" aria-label="Ir para o início">
+      <img class="brand-logo" src="img/logo.jpeg" alt="Logo Fernanda e Guilherme" />
+      <strong id="brandNomes">Fernanda & Guilherme</strong>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" type="button">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="navMenu" aria-label="Menu principal">
+      <a href="#evento">Evento</a>
+      <a href="#galeria">Fotos</a>
+      <a href="#presentes">Presentes</a>
+      <a href="#confirmacao">Confirmar</a>
+    </nav>
+  </header>
+
+  <section class="hero" aria-label="Início do site de casamento">
+    <div class="hero-copy">
+      <p class="eyebrow">Casamento</p>
+      <h1><span id="heroNoiva">Fernanda</span><em>&</em><span id="heroNoivo">Guilherme</span></h1>
+      <p class="hero-text" id="heroFrasePrincipal">Com alegria, convidamos você para celebrar conosco o início da nossa vida a dois.</p>
+
+      <div class="hero-date" aria-label="Data e horário do casamento">
+        <span id="heroDiaSemana">Sábado</span>
+        <strong id="heroData">03 de outubro de 2026</strong>
+        <span id="heroHorario">16:00h</span>
+      </div>
+
+      <div class="countdown" aria-label="Contagem regressiva para o casamento">
+        <div><strong id="dias">0</strong><span>Dias</span></div>
+        <div><strong id="horas">0</strong><span>Horas</span></div>
+        <div><strong id="minutos">0</strong><span>Min</span></div>
+        <div><strong id="segundos">0</strong><span>Seg</span></div>
+      </div>
+
+    </div>
+
+    <div class="hero-visual">
+      <figure class="main-photo-frame">
+        <img id="fotoPrincipal" src="img/casal/hero.jpg" alt="Foto principal do casal" />
+      </figure>
+      <div class="date-card" aria-hidden="true">
+        <span>03</span>
+        <strong>OUT</strong>
+        <small>2026</small>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section quote-section scripture-section" id="versiculo">
+      <p class="eyebrow">Versículo</p>
+      <blockquote>Assim, eles já não são dois, mas sim uma só carne. Portanto, o que Deus uniu, ninguém separe.</blockquote>
+      <cite>Mateus 19:6</cite>
+    </section>
+
+    <section class="section" id="evento">
+      <div class="section-title center">
+        <p class="eyebrow">Celebração</p>
+        <h2>Informações do evento</h2>
+        <p class="section-subtitle">Tudo que o convidado precisa saber para chegar com tranquilidade.</p>
+      </div>
+
+      <div class="event-grid">
+        <article class="event-card">
+          <span class="event-number">01</span>
+          <img class="event-photo" src="img/capela.png" alt="Foto da Capela do Santíssimo" />
+          <h3 id="cerimoniaTitulo">Cerimônia</h3>
+          <strong id="cerimoniaHorario">16:00h</strong>
+          <p id="cerimoniaLocal">Capela do Santíssimo</p>
+          <span id="cerimoniaEndereco">Endereço completo da cerimônia</span>
+          <a id="cerimoniaLink" class="btn-secondary full" href="#" target="_blank" rel="noopener noreferrer">Ver no mapa</a>
+        </article>
+
+        <article class="event-card event-card-highlight">
+          <span class="event-number">02</span>
+          <img class="event-photo" src="img/festa.png" alt="Foto do local da recepção" />
+          <h3 id="festaTitulo">Recepção</h3>
+          <strong id="festaHorario">Após a cerimônia</strong>
+          <p id="festaLocal">Local da festa</p>
+          <span id="festaEndereco">Endereço completo da festa</span>
+          <a id="festaLink" class="btn-secondary full" href="#" target="_blank" rel="noopener noreferrer">Ver no mapa</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gifts-section" id="presentes">
+      <div class="section-title center">
+        <p class="eyebrow">Lista de presentes</p>
+        <p class="section-subtitle gift-highlight-text">Sua presença é o nosso maior presente, mas, se desejar nos presentear, ficaremos muito felizes.</p>
+      </div>
+
+      <section class="filters">
+        <select id="filtroCategoria" aria-label="Filtrar por categoria">
+          <option value="todos">Todos</option>
+        </select>
+      </section>
+
+      <section id="listaPresentes" class="gift-grid"></section>
+
+      <section id="mensagemVazia" class="empty hidden">
+        <h2>Todos os presentes físicos foram reservados</h2>
+        <p>Você ainda pode participar pela opção Pix.</p>
+      </section>
+    </section>
+
+    <section class="section" id="galeria">
+      <div class="section-title center">
+        <h2>Galeria de momentos</h2>
+        <p class="section-subtitle">Alguns dos momentos que marcaram a nossa caminhada até aqui.</p>
+      </div>
+
+      <div class="couple-song">
+        <div>
+          <p class="eyebrow">Música do casal</p>
+          <h3>What's Up?</h3>
+          <span>4 Non Blondes</span>
+          <audio id="musicaCasamento" controls autoplay loop preload="auto" playsinline>
+            <source src="audio/musica.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+
+      <div class="gallery-grid" id="galeriaFotos"></div>
+    </section>
+
+    <section class="section confirmation-section" id="confirmacao">
+      <div class="confirmation-card">
+        <div>
+          <h2>Confirme sua presença</h2>
+          <p>Clicando no botão abaixo, você será direcionado ao WhatsApp da assessora Aline Antunes. Informe seu nome completo e o nome dos acompanhantes que irão com você, incluindo as crianças. Confirme até <strong id="confirmarAte">03/09/2026</strong>.</p>
+        </div>
+        <a class="btn-primary" id="linkConfirmacaoAssessora" href="#" target="_blank" rel="noopener noreferrer">Falar com Aline Antunes</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <div class="modal-card">
+      <button class="close" onclick="fecharModal()" aria-label="Fechar" type="button">×</button>
+
+      <img id="modalFoto" src="" alt="Foto do presente" />
+      <p id="modalCategoria" class="category"></p>
+      <h2 id="modalTitulo"></h2>
+      <p id="modalValor" class="price-modal"></p>
+
+      <div class="detail-box">
+        <strong>Descrição do presente</strong>
+        <p id="modalDescricao" class="description-modal"></p>
+      </div>
+
+      <a id="modalLinkLoja" class="btn-secondary full hidden" href="#" target="_blank" rel="noopener noreferrer">
+        Ver produto sugerido
+      </a>
+
+      <div id="areaReserva">
+        <label for="nomeConvidado">Seu nome</label>
+        <input id="nomeConvidado" type="text" placeholder="Ex: João e Maria" />
+
+        <label for="mensagemConvidado">Mensagem opcional</label>
+        <textarea id="mensagemConvidado" placeholder="Deixe uma mensagem para os noivos"></textarea>
+
+        <button class="btn-primary full" onclick="confirmarReserva()" type="button">Confirmar reserva</button>
+      </div>
+
+      <div id="areaPix" class="pix-area hidden">
+        <div class="pix-highlight">
+          <div>
+            <span>Chave Pix</span>
+            <strong id="pixChaveTexto"></strong>
+          </div>
+          <button class="copy-btn" onclick="copiarPix()" type="button">Copiar</button>
+        </div>
+
+        <img id="pixQrCode" class="pix-qrcode" src="img/qrcode-pix.png" alt="QR Code Pix" />
+
+        <label for="pixNome">Seu nome</label>
+        <input id="pixNome" type="text" placeholder="Ex: João e Maria" />
+
+        <label for="pixValor">Valor que deseja enviar</label>
+        <input id="pixValor" type="text" inputmode="decimal" placeholder="Ex: R$ 100,00" />
+
+        <label for="pixMensagem">Mensagem para os noivos</label>
+        <textarea id="pixMensagem" placeholder="Ex: Fizemos um Pix com muito carinho. Felicidades!"></textarea>
+
+        <button class="btn-primary full" onclick="avisarPix()" type="button">Avisar que fiz o Pix</button>
+      </div>
+
+      <p id="modalAviso" class="modal-warning"></p>
+    </div>
+  </div>
+
+  <footer>
+    <img class="footer-logo" src="img/logo.jpeg" alt="Logo Fernanda e Guilherme" />
+    <strong id="footerNomes">Fernanda & Guilherme</strong>
+    <span id="footerData">03 de outubro de 2026 | Paraná</span>
+    <span>Obrigado por fazer parte da nossa história.</span>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
