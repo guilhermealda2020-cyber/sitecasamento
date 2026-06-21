@@ -40,7 +40,7 @@ function aplicarConfiguracoesVisuais() {
   const nomeCasalAmp = `${cfg.noiva} & ${cfg.noivo}`;
   const nomeCasalE = `${cfg.noiva} e ${cfg.noivo}`;
 
-  document.title = `Casamento | ${nomeCasalAmp}`;
+  document.title = `Convite de casamento | ${nomeCasalAmp}`;
   setTexto("brandNomes", nomeCasalAmp);
   setTexto("heroNoiva", cfg.noiva);
   setTexto("heroNoivo", cfg.noivo);
@@ -79,7 +79,7 @@ function aplicarConfiguracoesVisuais() {
 
   const metaDescription = document.querySelector('meta[name="description"]');
   if (metaDescription) {
-    metaDescription.content = `Site de casamento de ${nomeCasalE}: evento, fotos, confirmação de presença e lista de presentes.`;
+    metaDescription.content = `Você é nosso convidado para celebrar o casamento de ${nomeCasalE} em ${cfg.dataTexto}, em ${cfg.cidade}.`;
   }
 }
 
