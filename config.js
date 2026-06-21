@@ -2,7 +2,7 @@
 // Para trocar fotos, substitua os arquivos dentro da pasta img/casal mantendo os mesmos nomes.
 // Para trocar textos, datas, locais e links, edite somente este arquivo.
 
-const API_URL = "https://script.google.com/macros/s/AKfycbzdYi7lf04BVd9avHxB7UVOsnVQAOLgYBTICsDQhuSKZaxiO-zXCpllii1t-Mtem3bxWw/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbyz9dVTFiWD3YkDlvR_qYOEdKzeWG9rulRf0JQIBAgdhm2T_IUrc7X9wXUhuEG3uB_E/exec";
 
 const SITE_CONFIG = {
   noiva: "Fernanda",
@@ -16,7 +16,7 @@ const SITE_CONFIG = {
   confirmarAte: "03/09/2026",
 
   frasePrincipal:
-    "Com alegria, convidamos você para celebrar conosco o início da nossa vida a dois.",
+    "Com alegria, convidamos você para celebrar conosco a nossa união e este capítulo tão especial da nossa história.",
 
   fraseSecundaria:
     "Reunimos aqui as informações do evento, confirmação de presença, fotos e lista de presentes.",
@@ -116,7 +116,7 @@ const SITE_CONFIG = {
   ]
 };
 
-const PIX_KEY = "10193675986";
+const PIX_KEY = "guilhermealda96@gmail.com";
 const PIX_QR_CODE = "img/qrcode-pix.png";
 
 const PIX_ITEM = {
