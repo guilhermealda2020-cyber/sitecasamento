@@ -16,7 +16,7 @@ const SITE_CONFIG = {
   confirmarAte: "03/09/2026",
 
   frasePrincipal:
-    "Com alegria, convidamos você para celebrar conosco o início da nossa vida a dois.",
+    "Com alegria, convidamos você para celebrar conosco a nossa união e este capítulo tão especial da nossa história.",
 
   fraseSecundaria:
     "Reunimos aqui as informações do evento, confirmação de presença, fotos e lista de presentes.",
