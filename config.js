@@ -116,7 +116,7 @@ const SITE_CONFIG = {
   ]
 };
 
-const PIX_KEY = "10193675986";
+const PIX_KEY = "guilhermealda96@gmail.com";
 const PIX_QR_CODE = "img/qrcode-pix.png";
 
 const PIX_ITEM = {
